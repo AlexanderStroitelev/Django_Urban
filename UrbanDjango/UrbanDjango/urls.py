@@ -18,6 +18,10 @@ Including another URLconf
 from django.contrib import admin
 from django.urls import path
 
+from UrbanDjango.task2.views import func_view_template , ClassViewTemplate
+
 urlpatterns = [
     path("admin/", admin.site.urls),
+    path("class-view/", ClassViewTemplate.as_view()),
+    path("func-view/", func_view_template),
 ]
