@@ -16,12 +16,9 @@ Including another URLconf
 """
 
 from django.contrib import admin
-from django.urls import path
-
-from UrbanDjango.task2.views import func_view_template, ClassViewTemplate
+from django.urls import path, include
 
 urlpatterns = [
-    path("admin/", admin.site.urls),
-    path("class-view/", ClassViewTemplate.as_view()),
-    path("func-view/", func_view_template),
+    path('admin/', admin.site.urls),
+    path('task2/', include('task2.urls')),  # Подключаем маршруты приложения task2
 ]
