@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Главная страница</title>
+    <style>
+        nav {
+            margin-bottom: 30px; /* Устанавливаем отступ в 30 пикселей между элементами nav */
+        }
+    </style>
+</head>
+<body>
+    <h1>Главная страница</h1>
+    <nav>
+        <a href="{% url 'task3:platform' %}">Главная</a>
+    </nav>
+    <nav>
+        <a href="{% url 'task3:games' %}">Магазин</a>
+    </nav>
+    <nav>
+        <a href="{% url 'task3:cart' %}">Корзина</a>
+    </nav>
+</body>
+</html>
