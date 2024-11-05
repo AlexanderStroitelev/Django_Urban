@@ -1,6 +1,7 @@
 from django.urls import path
 from . import views
 
+
 app_name = 'task3'
 urlpatterns = [
     path('platform/', views.platform_view, name='platform'),

@@ -1,5 +1,6 @@
 from django.shortcuts import render
 
+
 def platform_view (request):
     return render(request, 'third_task/platform.html')
 
