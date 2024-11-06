@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>{% block pagename %}{% endblock %}</title>
+</head>
+<body>
+    <header>
+        <nav>
+            <ul>
+                {% block menu %}
+                    <li><a href="{% url 'task4:platform1' %}">Главная</a></li>
+                    <li><a href="{% url 'task4:games1' %}">Магазин</a></li>
+                    <li><a href="{% url 'task4:cart1' %}">Корзина</a></li>
+                {% endblock %}
+            </ul>
+        </nav>
+    </header>
+
+    <main>
+        {% block content %}{% endblock %}
+    </main>
+
+    <footer>
+        <!-- Футер -->
+    </footer>
+</body>
+</html>
