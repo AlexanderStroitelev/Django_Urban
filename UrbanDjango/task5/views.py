@@ -14,7 +14,7 @@ def sign_up_by_django(request):
             repeat_password = form.cleaned_data['repeat_password']
             age = form.cleaned_data['age']
 
-            print ("New registration attempt:")
+            print ("Параметры регистрации нового пользователя:")
             print (f"Username: {username}")
             print (f"Password: {password}")
             print (f"Repeat Password: {repeat_password}")
@@ -46,7 +46,7 @@ def sign_up_by_html(request):
         repeat_password = request.POST.get('repeat_password')
         age = request.POST.get('age')
 
-        print ("New registration attempt:")
+        print ("Параметры регистрации нового пользователя:")
         print (f"Username: {username}")
         print (f"Password: {password}")
         print (f"Repeat Password: {repeat_password}")
