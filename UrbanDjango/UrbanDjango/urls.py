@@ -24,4 +24,5 @@ urlpatterns = [
     path('', include('task2.urls', namespace='task2')),
     path('', include('task3.urls', namespace='task3')),
     path('', include('task4.urls', namespace='task4')),
+    path('', include('task5.urls', namespace='task5')),
 ]
